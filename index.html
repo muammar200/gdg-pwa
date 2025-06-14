@@ -44,12 +44,12 @@
             © Google Developer Group Chapter UIN Alauddin Makassar x Dicoding 2025
         </footer>
     </div>
-
-         if('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('serviceworker.js').then(function (registration) {
                     console.log('Service Worker registered with scope:', registration.scope);
-                }, function(err) {
+                }, function (err) {
                     console.error('Service Worker registration failed:', err);
                 });
             });
